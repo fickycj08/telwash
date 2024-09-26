@@ -1,0 +1,585 @@
+/* CSS Umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Start*/
+.head {
+    width: 100%;
+    height: 62px;
+    background-color: #C8B891;
+}
+
+.logo-top {
+    background: url("../asset/logo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    overflow: hidden;
+    width: 169px;
+    height: 78px;
+}
+
+.regis-top {
+    width: 112px;
+    height: 38px;
+    position: absolute;
+    top: 12px;
+    right: 180px;
+    color: white;
+    text-align: center;
+    background-color: #3C3C3C;
+    opacity: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 17px;
+}
+
+.login-top {
+    width: 112px;
+    height: 38px;
+    position: absolute;
+    top: 12px;
+    right: 40px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    opacity: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 17px;
+}
+
+
+
+/* Media Query untuk Smartphone Kecil (min-width: 320px) */
+@media only screen and (min-width: 320px) {
+    .logo-top {
+        width: 120px;
+        height: 55px;
+        top: 4px;
+    }
+    
+    .regis-top, .login-top {
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        top: 15px;
+    }
+
+    .regis-top {
+        right: 120px;
+    }
+
+    .login-top {
+        right: 10px;
+    }
+}
+
+/* Media Query untuk Smartphone Besar (min-width: 481px) */
+@media only screen and (min-width: 481px) {
+    .logo-top {
+        width: 140px;
+        height: 65px;
+        top: -2px;
+    }
+    
+    .regis-top, .login-top {
+        width: 90px;
+        height: 34px;
+        line-height: 34px;
+        top: 10px;
+    }
+
+    .regis-top {
+        right: 140px;
+    }
+
+    .login-top {
+        right: 20px;
+    }
+}
+
+/* Media Query untuk Tablet (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+    .logo-top {
+        width: 150px;
+        height: 70px;
+        top: -2px;
+    }
+    
+    .regis-top, .login-top {
+        width: 100px;
+        height: 36px;
+        line-height: 36px;
+        top: 10px;
+    }
+
+    .regis-top {
+        right: 160px;
+    }
+
+    .login-top {
+        right: 30px;
+    }
+}
+
+/* Media Query untuk Laptop Kecil / Tablet Besar (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+    .logo-top {
+        width: 160px;
+        height: 75px;
+        top: -5px;
+    }
+    
+    .regis-top, .login-top {
+        width: 110px;
+        height: 38px;
+        line-height: 38px;
+        top: 12px;
+    }
+
+    .regis-top {
+        right: 170px;
+    }
+
+    .login-top {
+        right: 40px;
+    }
+}
+
+/* Media Query untuk Laptop / Desktop (min-width: 1441px) */
+@media only screen and (min-width: 1441px) {
+    .logo-top {
+        width: 169px;
+        height: 78px;
+        top: -10px;
+    }
+    
+    .regis-top, .login-top {
+        width: 112px;
+        height: 38px;
+        line-height: 38px;
+        top: 12px;
+    }
+
+    .regis-top {
+        right: 180px;
+    }
+
+    .login-top {
+        right: 40px;
+    }
+}
+
+/* Media Query untuk Monitor Besar / 4K (min-width: 2560px) */
+@media only screen and (min-width: 2560px) {
+    .logo-top {
+        width: 220px;
+        height: 100px;
+    }
+    
+    .regis-top, .login-top {
+        width: 130px;
+        height: 50px;
+        line-height: 50px;
+        top: 20px;
+    }
+
+    .regis-top {
+        right: 220px;
+    }
+
+    .login-top {
+        right: 60px;
+    }
+}
+/* Header End*/
+
+/* Sidebar Start*/
+.sidebar {
+    width: 304px;
+    height: 1080px;
+    background-color: white;
+    background-color: white(255, 0, 0);
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column; /* Menyusun elemen di dalamnya secara vertikal */
+    align-items: center;    /* Menyusun elemen di tengah secara horizontal */
+    justify-content: flex-start; /* Memulai dari atas */
+    padding-top: 30px; /* Jarak dari atas sidebar */
+}
+
+.ph-user-circle {
+    color: black;
+    font-size: 84px;
+    margin-bottom: 20px; /* Jarak antara ikon dengan role */
+}
+
+.role {
+    color: black;
+    text-align: center;
+    opacity: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 15px;
+    margin-bottom: 10px; /* Jarak antara role dengan nama-admin */
+}
+
+.nama-admin {
+    width: 193px;
+    height: auto;
+    padding: 5px 10px; /* Memberikan padding agar teks lebih rapi */
+    color: black;
+    background-color: #D9D9D9;
+    opacity: 100%;
+    border-radius: 10px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 15px;
+    text-align: center; /* Memastikan teks di tengah */
+}
+
+.garis1-sidebar {
+    width: 304px; /* Lebar garis */
+    height: 1px; /* Tinggi garis, yang mengontrol ketebalan */
+    background-color: black; /* Warna garis */
+    margin-top: 40px; /* Jarak dari elemen sebelumnya */
+}
+
+.warning-dikirim {
+    color: black;
+    text-align: center;
+    background-color: white; /* Latar belakang elemen */
+    opacity: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    font-family: 'Poppins'; 
+    font-weight: 500; 
+    font-size: 17px;
+    margin-top: 20px;
+    margin-right: 80px; /* Memusatkan elemen di dalam container */
+    width: 200px;
+    display: flex; /* Menggunakan Flexbox untuk menyusun teks dan ikon */
+    align-items: center; /* Memastikan teks dan ikon tersusun secara vertikal */
+    justify-content: center; /* Menyusun konten di tengah secara horizontal */
+}
+
+.warning-dikirim i.ph-warning-circle {
+    font-size: 24px; /* Ukuran ikon */
+    margin-left: 8px; /* Jarak antara teks dan ikon */
+    color: black; /* Warna ikon */
+}
+
+.jumlah-warning {
+    color: black;
+    background-color: white;
+    opacity: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 20px;
+    width: 300px;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.jumlah-warning i.ph-alarm, 
+.jumlah-warning i.ph-caret-right {
+    font-size: 30px;
+    color: black;
+}
+
+.warning-text {
+    flex: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.garis2-sidebar {
+    width: 304px;
+    height: 1px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.transaksibaru {
+    color: black;
+    background-color: white;
+    opacity: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 300px;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.ph-plus-circle {
+    font-size: 25px;
+    margin-right: 10px;
+    color: black;
+}
+
+.transaksibaru-text {
+    flex: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.transaksibaru i.ph-caret-right,
+.jumlah-warning i.ph-caret-right {
+    font-size: 30px;
+    margin-left: auto; /* Membuat ikon menempel di kanan */
+    color: black;
+}
+
+.garis3-sidebar {
+    width: 304px;
+    height: 1px;
+    background-color: black;
+    margin-top: 22px;
+}
+
+.datapelanggan{
+    color: black;
+    background-color: white;
+    opacity: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 300px;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.ph-address-book {
+    font-size: 25px;
+    margin-right: 10px;
+    color: black;
+}
+
+.datapelanggan-text {
+    flex: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.datapelanggan i.ph-caret-right,
+ i.ph-caret-right {
+    font-size: 30px;
+    margin-left: auto; /* Membuat ikon menempel di kanan */
+    color: black;
+}
+
+.garis4-sidebar {
+    width: 304px;
+    height: 1px;
+    background-color: black;
+    margin-top: 22px;
+}
+
+.historytransksi{
+    color: black;
+    background-color: white;
+    opacity: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 300px;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.ph-book-open {
+    font-size: 25px;
+    margin-right: 10px;
+    color: black;
+}
+
+.historytransksi-text {
+    flex: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.historytransksi i.ph-caret-right,
+ i.ph-caret-right {
+    font-size: 30px;
+    margin-left: auto; /* Membuat ikon menempel di kanan */
+    color: black;
+}
+
+.garis5-sidebar {
+    width: 304px;
+    height: 1px;
+    background-color: black;
+    margin-top: 22px;
+}
+
+.laporantransaksi{
+    color: black;
+    background-color: white;
+    opacity: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 300px;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.ph-bank {
+    font-size: 25px;
+    margin-right: 10px;
+    color: black;
+}
+
+.laporantransaksi-text {
+    flex: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.laporantransaksi i.ph-caret-right,
+ i.ph-caret-right {
+    font-size: 30px;
+    margin-left: auto; /* Membuat ikon menempel di kanan */
+    color: black;
+}
+
+.logo-bot {
+    width: 234px; /* Sesuaikan lebar logo */
+    height: 147px; /* Otomatis menyesuaikan tinggi berdasarkan proporsi gambar */
+    margin: 20px auto; /* Memberikan jarak dan pusatkan logo di tengah */
+    margin-top: 200px;
+    text-align: center; /* Pastikan logo tetap berada di tengah container */
+}
+
+.logo-bot img {
+    max-width: 100%; /* Agar gambar tidak melebihi lebar container */
+    height: auto; /* Menyesuaikan tinggi berdasarkan proporsi asli gambar */
+    display: block; /* Menghilangkan celah di bawah gambar */
+}
+
+/*landing page*/
+
+.landing-bg{
+    background-color: #F4E8D4; /* Ganti dengan warna yang Anda inginkan */
+    height: 1110px;
+}
+
+.warning-pesanan{
+    width: 567px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    top: 10px;
+    border-radius: 30px;
+    border: 1px solid #6C5A3B;   /* Border biasa */
+}
+
+.bulanini-bt{
+    width: 90px;
+    height: 20px;
+    background-color: #FAFAFC;
+    position: relative;
+    left: 30px;
+    top: 18px;
+    border-radius: 30px;
+    border: 1px solid #6C5A3B;   /* Border biasa */
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    text-align: center;
+    font-size: 13px;
+}
+
+.bulanlalu-bt{
+    width: 90px;
+    height: 20px;
+    background-color: #FAFAFC;
+    position: relative;
+    left: 35px;
+    top: 18px;
+    border-radius: 30px;
+    border: 1px solid #6C5A3B;   /* Border biasa */
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    text-align: center;
+    font-size: 13px;
+}
+
+.pesananditerima-dashboard{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    font-size: 13px;
+}
+
+.pesanandiproses-dashboard{
+    position: relative;
+    top: 10px;
+    left: 180px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    font-size: 13px;
+}
+
+.pesananselesai-dashboard{
+    position: relative;
+    top: -10px;
+    left: 330px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    font-size: 13px;
+}
