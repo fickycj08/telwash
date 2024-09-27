@@ -538,7 +538,7 @@
 /*sidebar END*/
 
 
-/*landing page*/
+/*dashboard page START*/
 .landing-bg{
     background-color: #F4E8D4; /* Ganti dengan warna yang Anda inginkan */
     height: 1110px;
@@ -764,3 +764,138 @@
 .order-table tr:hover {
     background-color: #f1f1f1; /* Warna baris saat di-hover */
 }
+
+/*dashboard page END*/
+
+/*index page START*/
+.slogan{
+    width: 703px;
+    height: 180px;
+    text-align: center;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    font-size: 60px;
+    left: 600px;
+    top: 150px;
+    color: #6C5A3B;
+    position: relative;
+}
+
+.highlight {
+    color: #3C3C3C; /* Warna khusus untuk kata "Wardrobe!" */
+}
+
+.logo2{
+    position: relative;
+    left: 720px;
+    top: -30px;
+}
+
+.container-landing{
+    width: 320px;
+    height: 150px;
+    background-color: #6C5A3B;  
+    border-radius: 20px;
+    position: relative;
+    top: 300px;
+    left: 380px;
+}
+
+.ph-handbag{
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    color: white;
+    top: 20px;
+    left: 130px;
+}
+
+.container-text{
+    position: relative;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    font-size: 20px;
+    color: white;
+    right: 30px;
+    top: 50px;
+}
+
+.container2-landing{
+    width: 320px;
+    height: 150px;
+    background-color: #6C5A3B;
+    border-radius: 20px;
+    position: relative;
+    top: 50px;
+    left: 780px;
+}
+
+.ph-hourglass-high{
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    color: white;
+    top: 20px;
+    left: 130px;
+}
+
+.container3-landing{
+    width: 320px;
+    height: 150px;
+    background-color: #6C5A3B;
+    border-radius: 20px;
+    position: relative;
+    top: -200px;
+    left: 1170px;
+}
+
+.ph-t-shirt{
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    color: white;
+    top: 20px;
+    left: 130px;
+}
+
+.ph-arrow-fat-line-right:nth-of-type(1){
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 195px;
+    left: 710px;
+}
+
+.ph-arrow-fat-line-right:nth-of-type(2){
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -50px;
+    left: 1105px;
+}
+
+.login-center{
+    width: 112px;
+    height: 38px;
+    position: absolute;
+    top: 450px;
+    left: 880px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    opacity: 100%;
+    line-height: 38px;
+    border-radius: 10px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: bold; 
+    font-size: 17px;
+}
+/*index page END*/
