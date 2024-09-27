@@ -258,55 +258,57 @@
 
 .garis1-sidebar {
     width: 304px; /* Lebar garis */
-    height: 1px; /* Tinggi garis, yang mengontrol ketebalan */
+    height: 0%; /* Tinggi garis, yang mengontrol ketebalan */
     background-color: black; /* Warna garis */
-    margin-top: 40px; /* Jarak dari elemen sebelumnya */
+
+}
+
+.warning-button {
+    display: block; /* Membuatnya seperti tombol block */
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    color: inherit; /* Warna teks mengikuti warna yang ditentukan di elemen */
+    padding: 0px;
+    background-color: white; /* Warna background tombol */
+    border-top: 0.5px solid black;  /* Border atas */
+    border-bottom: 0.5px solid black; /* Border bawah */
+    position: relative;
+    top: 40px;
+    height: 100px;
+    transition: background-color 0.3s ease; /* Menambahkan efek transisi saat hover */
+}
+
+.warning-button:hover {
+    background-color: #D9D9D9; /* Ubah warna background saat di-hover */
 }
 
 .warning-dikirim {
     color: black;
     text-align: center;
-    background-color: white; /* Latar belakang elemen */
-    opacity: 100%;
-    line-height: 38px;
-    border-radius: 10px;
-    font-family: 'Poppins'; 
-    font-weight: 500; 
+    font-family: 'Poppins';
+    font-weight: 500;
     font-size: 17px;
-    margin-top: 20px;
-    margin-right: 80px; /* Memusatkan elemen di dalam container */
-    width: 200px;
-    display: flex; /* Menggunakan Flexbox untuk menyusun teks dan ikon */
-    align-items: center; /* Memastikan teks dan ikon tersusun secara vertikal */
-    justify-content: center; /* Menyusun konten di tengah secara horizontal */
-}
-
-.warning-dikirim i.ph-warning-circle {
-    font-size: 24px; /* Ukuran ikon */
-    margin-left: 8px; /* Jarak antara teks dan ikon */
-    color: black; /* Warna ikon */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .jumlah-warning {
     color: black;
     background-color: white;
-    opacity: 100%;
     line-height: 38px;
     border-radius: 10px;
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 25px;
-    margin-top: 20px;
-    width: 300px;
-    margin-right: auto;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
 
-.jumlah-warning i.ph-alarm, 
-.jumlah-warning i.ph-caret-right {
+.jumlah-warning i {
     font-size: 30px;
     color: black;
 }
@@ -314,137 +316,160 @@
 .warning-text {
     flex: 1;
     text-align: left;
-    white-space: nowrap;
 }
+
 
 .garis2-sidebar {
     width: 304px;
     height: 1px;
     background-color: black;
-    margin-top: 50px;
+
+}
+
+.transaksibaru-button {
+    display: block;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: inherit; /* Membuat warna teks mengikuti elemen di dalamnya */
+    padding: 0px;
+    position: relative;
+    top:40px;
+    border-bottom: 0.5px solid black; /* Border bawah */
+    background-color: white; /* Warna latar belakang tombol */
+    width: 305px;
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.transaksibaru-button:hover {
+    background-color: #D9D9D9; /* Warna saat hover */
 }
 
 .transaksibaru {
     color: black;
     background-color: white;
-    opacity: 100%;
     line-height: 38px;
     border-radius: 10px;
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 20px;
-    margin-top: 20px;
-    width: 300px;
-    margin-right: auto;
+    font-size: 25px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
 
-.ph-plus-circle {
-    font-size: 25px;
-    margin-right: 10px;
-    color: black;
+.transaksibaru i {
+    font-size: 30px; /* Ukuran ikon */
+    color: black    ;
 }
 
 .transaksibaru-text {
+    margin-left: 10px;
     flex: 1;
     text-align: left;
-    white-space: nowrap;
 }
 
-.transaksibaru i.ph-caret-right,
-.jumlah-warning i.ph-caret-right {
-    font-size: 30px;
-    margin-left: auto; /* Membuat ikon menempel di kanan */
-    color: black;
-}
 
 .garis3-sidebar {
     width: 304px;
-    height: 1px;
+    height: 0px;
     background-color: black;
     margin-top: 22px;
 }
 
-.datapelanggan{
+.datapelanggan-button {
+    display: block;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: inherit; /* Membuat warna teks mengikuti elemen di dalamnya */
+    padding: 0px;
+    position: relative;
+    top:20px;
+    background-color: white; /* Warna latar belakang tombol */
+    width: 305px;
+    border-bottom: 0.5px solid black; /* Border bawah */
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.datapelanggan-button:hover {
+    background-color: #D9D9D9; /* Warna saat hover */
+}
+
+.datapelanggan {
     color: black;
     background-color: white;
-    opacity: 100%;
     line-height: 38px;
     border-radius: 10px;
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 20px;
-    margin-top: 20px;
-    width: 300px;
-    margin-right: auto;
+    font-size: 25px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
-.ph-address-book {
-    font-size: 25px;
-    margin-right: 10px;
-    color: black;
+
+.datapelanggan i {
+    font-size: 30px; /* Ukuran ikon */
+    color: black    ;
 }
 
 .datapelanggan-text {
+    margin-left: 10px;
     flex: 1;
     text-align: left;
-    white-space: nowrap;
 }
 
-.datapelanggan i.ph-caret-right,
- i.ph-caret-right {
-    font-size: 30px;
-    margin-left: auto; /* Membuat ikon menempel di kanan */
-    color: black;
-}
 
 .garis4-sidebar {
     width: 304px;
-    height: 1px;
+    height: 0px;
     background-color: black;
     margin-top: 22px;
 }
 
-.historytransksi{
+
+.historytransksi-button {
+    display: block;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: inherit; /* Membuat warna teks mengikuti elemen di dalamnya */
+    padding: 0px;
+    position: relative;
+    top:0px;
+    background-color: white; /* Warna latar belakang tombol */
+    width: 305px;
+    border-bottom: 0.5px solid black; /* Border bawah */
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.historytransksi-button:hover {
+    background-color: #D9D9D9; /* Warna saat hover */
+}
+
+.historytransksi {
     color: black;
     background-color: white;
-    opacity: 100%;
     line-height: 38px;
     border-radius: 10px;
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 20px;
-    margin-top: 20px;
-    width: 300px;
-    margin-right: auto;
+    font-size: 25px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
-.ph-book-open {
-    font-size: 25px;
-    margin-right: 10px;
-    color: black;
+
+.historytransksi i {
+    font-size: 30px; /* Ukuran ikon */
+    color: black    ;
 }
 
 .historytransksi-text {
+    margin-left: 10px;
     flex: 1;
     text-align: left;
-    white-space: nowrap;
-}
-
-.historytransksi i.ph-caret-right,
- i.ph-caret-right {
-    font-size: 30px;
-    margin-left: auto; /* Membuat ikon menempel di kanan */
-    color: black;
 }
 
 .garis5-sidebar {
@@ -454,40 +479,47 @@
     margin-top: 22px;
 }
 
-.laporantransaksi{
+.laporantransaksi-button {
+    display: block;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: inherit; /* Membuat warna teks mengikuti elemen di dalamnya */
+    padding: 0px;
+    position: relative;
+    top:-20px;
+    background-color: white; /* Warna latar belakang tombol */
+    width: 305px;
+    border-bottom: 0.5px solid black; /* Border bawah */
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.laporantransaksi-button:hover {
+    background-color: #D9D9D9; /* Warna saat hover */
+}
+
+.laporantransaksi {
     color: black;
     background-color: white;
-    opacity: 100%;
     line-height: 38px;
     border-radius: 10px;
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 20px;
-    margin-top: 20px;
-    width: 300px;
-    margin-right: auto;
+    font-size: 25px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
-.ph-bank {
-    font-size: 25px;
-    margin-right: 10px;
-    color: black;
+
+.laporantransaksi i {
+    font-size: 30px; /* Ukuran ikon */
+    color: black    ;
 }
 
 .laporantransaksi-text {
+    margin-left: 10px;
     flex: 1;
     text-align: left;
-    white-space: nowrap;
-}
-
-.laporantransaksi i.ph-caret-right,
- i.ph-caret-right {
-    font-size: 30px;
-    margin-left: auto; /* Membuat ikon menempel di kanan */
-    color: black;
 }
 
 .logo-bot {
@@ -503,9 +535,10 @@
     height: auto; /* Menyesuaikan tinggi berdasarkan proporsi asli gambar */
     display: block; /* Menghilangkan celah di bawah gambar */
 }
+/*sidebar END*/
+
 
 /*landing page*/
-
 .landing-bg{
     background-color: #F4E8D4; /* Ganti dengan warna yang Anda inginkan */
     height: 1110px;
@@ -554,32 +587,180 @@
     font-size: 13px;
 }
 
-.pesananditerima-dashboard{
+.pengingat-dashboard{
+    width: 500px;
+    height: 70px;
     position: relative;
-    top: 30px;
     left: 30px;
-    font-family: 'Poppins'; 
-    font-style: normal;
-    font-weight: 550; 
-    font-size: 13px;
+    top: 30px;
 }
 
-.pesanandiproses-dashboard{
+.pengingatditerima-dashboard{
     position: relative;
-    top: 10px;
-    left: 180px;
+    width: 140px;
+    height: 20px;
+    top: 0px;
+    left: 0px;
     font-family: 'Poppins'; 
     font-style: normal;
     font-weight: 550; 
     font-size: 13px;
+    text-align: center;
 }
 
-.pesananselesai-dashboard{
+.pengingatditerima-dashboard-jumlah{
     position: relative;
-    top: -10px;
-    left: 330px;
+    width: 140px;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    font-size: 30px;
+    text-align: left;
+}
+
+.ph-check-circle{
+    position: relative;
+    top: 3px;
+}
+
+.pengingatdiproses-dashboard{
+    position: relative;
+    width: 140px;
+    height: 20px;
+    top: -70px;
+    left: 140px;
     font-family: 'Poppins'; 
     font-style: normal;
     font-weight: 550; 
     font-size: 13px;
+    text-align: center;
+}
+
+.pengingatdiproses-dashboard-jumlah{
+    position: relative;
+    width: 140px;
+    height: 50px;
+    top: -70px;
+    left: 140px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    font-size: 30px;
+    text-align: left;
+}
+
+.pengingatselesais-dashboard{
+    position: relative;
+    width: 140px;
+    height: 20px;
+    top: -140px;
+    left: 280px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    font-size: 13px;
+    text-align: center;
+}
+
+.pengingatselesais-dashboard-jumlah{
+    position: relative;
+    width: 140px;
+    height: 50px;
+    top: -140px;
+    left: 280px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    font-size: 30px;
+    text-align: left;
+}
+
+.searchbar {
+    width: 350px;
+    height: 37px;
+    background-color: white;
+    position: relative;
+    left: 620px;
+    top: -30px;
+    border: 1px solid #6C5A3B;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-family: 'Poppins'; 
+    font-style: normal;
+    font-weight: 550; 
+    font-size: 12px;
+    text-align: left;
+}
+
+.searchbar i.ph-magnifying-glass {
+    opacity: 0.3; /* Mengatur opacity menjadi 30% (bukan 30%) */
+    margin-right: 5px; /* Berikan jarak antara ikon dan teks */
+    transition: opacity 0.3s ease; /* Tambahkan transisi untuk perubahan opacity */
+}
+
+.searchbar-input {
+    border: none; /* Menghilangkan border default dari input */
+    outline: none; /* Menghilangkan outline default */
+    flex: 1; /* Membuat input melebar sesuai container */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: transparent; /* Agar background input menyatu dengan searchbar */
+}
+
+.filter-select {
+    width: 132px;
+    height: 37px;
+    background-color: white;
+    border: 1px solid #6C5A3B;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    position: relative;
+    border-radius: 10px;
+    left: 980px;
+    top: -67px;
+    font-size: 14px;
+}
+
+.table-container {
+    width: 1600px;
+    height: 900px;
+    padding: 20px;
+    top: -80px;
+    position: relative;
+    overflow-x: auto; /* Agar tabel dapat di-scroll jika terlalu lebar */
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    border: 1px solid #ddd; /* Border luar tabel */
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ddd; /* Border sel tabel */
+    padding: 8px;
+    text-align: left;
+}
+
+.order-table th {
+    background-color: white; /* Warna latar belakang header tabel */
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.order-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Warna baris genap */
+}
+
+.order-table tr:hover {
+    background-color: #f1f1f1; /* Warna baris saat di-hover */
 }

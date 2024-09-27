@@ -12,9 +12,17 @@
 <body>
     <div class="head">
         <div class="logo-top"></div>
-        <div class="regis-top"><p>Register</p></div>
-        <div class="login-top"><p>Log In</p></div>
+        <a href="halaman-tujuan.html" class="register-button">
+            <div class="regis-top">
+                <p>Register</p>
+            </div>
+        </a>
+        <a href="halaman-tujuan.html" class="login-button">
+        <div class="login-top">
+            <p>Log In</p>
         </div>
+        </a>
+    </div>
 
 </body>
 

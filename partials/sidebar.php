@@ -61,40 +61,53 @@
         <div class="nama-admin">
             <?php echo $nama_admin; ?>
         </div>
-        <div class="garis1-sidebar"></div>
-        <div class="warning-dikirim">
-            Perlu Dikirim Hari Ini
-            <i class="ph-warning-circle"></i>
-        </div>
-        <div class="jumlah-warning">
-            <i class="ph-alarm"></i>
-            <span class="warning-text">30</span>
-            <i class="ph-caret-right"></i>
-        </div>
+        <a href="halaman-tujuan.html" class="warning-button">
+            <div class="garis1-sidebar"></div>
+            <div class="warning-dikirim">
+                Perlu Dikirim Hari Ini
+                <i class="ph-warning-circle"></i>
+            </div>
+            <div class="jumlah-warning">
+                <i class="ph-alarm"></i>
+                <span class="warning-text">30</span>
+                <i class="ph-caret-right"></i>
+            </div>
+        </a>
+
         <div class="garis2-sidebar"></div>
-        <div class="transaksibaru">
-            <i class="ph-plus-circle"></i>
-            <span class="transaksibaru-text">Transaksi Baru</span>
-            <i class="ph-caret-right"></i>
-        </div>
+        <a href="halaman-transaksi-baru.html" class="transaksibaru-button">
+            <div class="transaksibaru">
+                <i class="ph-plus-circle"></i>
+                <span class="transaksibaru-text">Transaksi Baru</span>
+                <i class="ph-caret-right"></i>
+            </div>
+        </a>
+
         <div class="garis3-sidebar"></div>
-        <div class="datapelanggan">
-            <i class="ph-address-book"></i>
-            <span class="datapelanggan-text">Data Pelanggan</span>
-            <i class="ph-caret-right"></i>
-        </div>
+        <a href="halaman-data-pelanggan.html" class="datapelanggan-button">
+            <div class="datapelanggan">
+                <i class="ph-address-book"></i>
+                <span class="datapelanggan-text">Data Pelanggan</span>
+                <i class="ph-caret-right"></i>
+            </div>
+        </a>
+
         <div class="garis4-sidebar"></div>
-        <div class="historytransksi">
-            <i class="ph-book-open"></i>
-            <span class="historytransksi-text">History Transksi</span>
-            <i class="ph-caret-right"></i>
-        </div>
+        <a href="halaman-data-pelanggan.html" class="historytransksi-button">
+            <div class="historytransksi">
+                <i class="ph-book-open"></i>
+                <span class="historytransksi-text">History Transksi</span>
+                <i class="ph-caret-right"></i>
+            </div>
+        </a>
         <div class="garis5-sidebar"></div>
-        <div class="laporantransaksi">
-            <i class="ph-bank"></i>
-            <span class="laporantransaksi-text">Laporan Transaksi</span>
-            <i class="ph-caret-right"></i>
-        </div>
+        <a href="halaman-data-pelanggan.html" class="laporantransaksi-button">
+            <div class="laporantransaksi">
+                <i class="ph-bank"></i>
+                <span class="laporantransaksi-text">Laporan Transaksi</span>
+                <i class="ph-caret-right"></i>
+            </div>
+        </a>
         <div class="logo-bot">
             <img src="../asset/logo.png" alt="">
         </div>
