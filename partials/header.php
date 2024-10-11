@@ -1,3 +1,7 @@
+<?php
+session_start(); // Memulai session di bagian paling atas file
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,19 +15,18 @@
 
 <body>
     <div class="head">
-        <div class="logo-top"></div>
-        <a href="halaman-tujuan.html" class="register-button">
-            <div class="regis-top">
-                <p>Register</p>
-            </div>
-        </a>
-        <a href="halaman-tujuan.html" class="login-button">
-        <div class="login-top">
-            <p>Log In</p>
+        <div class="logo-top">
+            
         </div>
-        </a>
+        <?php if (isset($_SESSION['user_id'])): ?>
+            <!-- Tampilkan tombol Log Out jika user sudah login -->
+            <a href="logout.php" class="login-button">
+                <div class="login-top">
+                    <p>Log Out</p>
+                </div>
+            </a>
+        <?php endif; ?>
     </div>
-
 </body>
 
 </html>

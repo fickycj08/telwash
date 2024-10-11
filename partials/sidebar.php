@@ -13,54 +13,51 @@
 
 
 <body>
-    <?php include 'koneksi.php'; ?>
+   <?php
+// Mulai session
+session_start();
 
-    <?php
-    // Mengambil role berdasarkan user_id
-    $sql_role = "SELECT role FROM Users WHERE user_id = 1";
-    $result_role = $conn->query($sql_role);
+// Cek apakah pengguna sudah login
+if (isset($_SESSION['user_id'])) {
+    $user_id = $_SESSION['user_id'];
 
-    if ($result_role->num_rows > 0) {
-        while ($row = $result_role->fetch_assoc()) {
-            $role = $row['role'];
-        }
+    // Ambil nama pengguna dari database berdasarkan user_id
+    $sql_user = "SELECT name, role FROM Users WHERE user_id = $user_id";
+    $result_user = $conn->query($sql_user);
+
+    if ($result_user->num_rows > 0) {
+        $user_data = $result_user->fetch_assoc();
+        $nama_user = $user_data['name'];  // Nama pengguna yang sedang login
+        $role_user = $user_data['role'];  // Role pengguna yang sedang login
     } else {
-        $role = "Role tidak ditemukan";
+        $nama_user = "Nama tidak ditemukan";
+        $role_user = "Role tidak ditemukan";
     }
+} else {
+    // Redirect ke halaman login jika belum login
+    header("Location: ../index.php");
+    exit();
+}
+?>
 
-    // Mengambil nama admin dari tabel Users
-    $sql_admin = "SELECT name FROM Users WHERE role = 'admin'";
-    $result_admin = $conn->query($sql_admin);
+<!-- Struktur HTML -->
+<div class="sidebar">
+    <!-- Ikon Phosphor -->
+    <div>
+        <script src="https://unpkg.com/phosphor-icons"></script>
+        <i class="ph-user-circle"></i>
+    </div>
+    <!-- Menampilkan role pengguna yang sedang login -->
+    <div class="role">
+        <?php echo $role_user; ?>
+    </div>
+    <!-- Menampilkan nama pengguna yang sedang login -->
+    <div class="nama-admin">
+        <?php echo $nama_user; ?>
+    </div>
 
-    if ($result_admin->num_rows > 0) {
-        while ($row = $result_admin->fetch_assoc()) {
-            $nama_admin = $row['name'];
-        }
-    } else {
-        $nama_admin = "Admin tidak ditemukan";
-    }
 
-    // Menutup koneksi
-    $conn->close();
-    ?>
 
-    <!-- Struktur HTML -->
-    <div class="sidebar">
-        <!-- Ikon Phosphor -->
-        <div>
-            <script src="https://unpkg.com/phosphor-icons"></script>
-            <i class="ph-user-circle"></i>
-        </div>
-
-        <!-- Menampilkan role -->
-        <div class="role">
-            <?php echo $role; ?>
-        </div>
-
-        <!-- Menampilkan nama admin -->
-        <div class="nama-admin">
-            <?php echo $nama_admin; ?>
-        </div>
         <a href="halaman-tujuan.html" class="warning-button">
             <div class="garis1-sidebar"></div>
             <div class="warning-dikirim">
